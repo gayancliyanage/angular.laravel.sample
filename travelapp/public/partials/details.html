@@ -1,0 +1,64 @@
+<section class="details-container">
+<div class="container" ng-model="bus" ng-controller="DetailsController">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="row">
+					<div class="col-xs-12 topheader"><span class="glyphicon glyphicon-road"></span> Details</div>
+				</div>
+			</nav>
+			<div class="row">
+				<div class="col-xs-12" style="text-align:center;">
+					<h1 class="root">Root number {{bus[0].root_id}} Bus</h1>
+					<h3>in </h3>
+					<h1>{{bus[0].travel_time}} mins</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+				<!--	<h3>Get on Board &nbsp;<span class="label label-info">{{buses[whichItem].arrivalstop}}</span></h3>-->
+				</div>					
+			</div>
+			<div class="row">
+				<div class="col-xs-12 detail-block">
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>{{bus[0].from_city}} to {{bus[0].to_city}}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p ><span class="glyphicon glyphicon-forward"></span> Heading to {{bus[0].Heading}} </p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h3>Now &nbsp; <span class="label label-success">{{bus[0].last_stop}}</span></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  	<div class="row">
+        <a href="#/logo">
+            <div class="col-xs-3 center right-border blue ash active">
+            	<h4 ><span class="glyphicon glyphicon-map-marker"></span></h4><h5 > NearBy</h5>
+            </div>
+        </a>
+        <a href="#/map">
+            <div class="col-xs-3 center right-border blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-globe"></span></h4> <h5>Map</h5>
+            </div>
+        </a>
+        <a href="#/routes">
+            <div class="col-xs-3 center right-border blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-random"></span></h4><h5> Routes</h5>
+            </div>
+        </a>
+        <a href="#/settings">
+            <div class="col-xs-3 center blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-asterisk"></span></h4> <h5>Settings</h5>
+            </div>  
+        </a>
+    </div>
+</nav>
+</section>

@@ -1,0 +1,92 @@
+<section class="logo-container">
+<div class="container" >
+	<div class="row">
+		<div class="col-md-12 appname">
+			Travel Buddy
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-2">
+		  
+		</div>
+		<div class="col-xs-8 top-buffer" ng-controller="SuggestionsFromController">
+		  <input ng-model="formLocation" type="text" class="form-control" placeholder="Type your locaiton or tap side"  ng-focus="clickFromLocation()" />
+		  <input type="hidden" ng-model="fromLocationID">
+		  <div class="sug_box" ng-show="sugShow" >
+		   <ul class="suggestions">
+		   	<li class="sug-element" ng-repeat="item in suggestions | filter:formLocation" ng-click="selectFromLocation(item.id, item.name)">{{item.name}}</li>
+		   </ul>
+		  </div>
+		</div>
+		<div class="col-xs-2">
+		  <h3 style="color: #ff9500;margin-top:15px;"><span class="glyphicon glyphicon-screenshot"></span></h3>
+		</div>
+	</div>
+	<div class="row top-buffer">
+		<div class="col-xs-2">
+		  
+		</div>
+		<div class="col-xs-8" ng-controller="SuggestionsToController">
+		  <input ng-model="toLocation" type="text" class="form-control" placeholder="Type your Destination"  ng-focus="clickToLocation()">
+		   <input type="hidden" ng-model="toLocationID">
+		  <div class="sug_box" ng-show="toShow" ng-mouseleave="toLocationListLeave()">
+		   <ul class="suggestions">
+		   	<li class="sug-element" ng-repeat="item in toSuggestions | filter:toLocation "  ng-click="selectToLocation(item.bus_stop_id, item.name)">{{item.name}}</li>
+		   </ul>
+		  </div>
+		</div>
+		</div>
+		<div class="col-xs-2">
+		  
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-2">
+		  
+		</div>
+		<div class="col-xs-8 top-buffer" ng-controller="SearchController">		
+		  <button type="button" class="btn btn-primary btn-md btn-block" ng-click="SearchButtonClick()">Get Buses</button>
+		</div>
+		<div class="col-xs-2">
+		  
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+		   <div class="logo">		   	
+				<span class="glyphicon glyphicon-road"></span>
+		   </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 getbuses">
+			travel smart...	!
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  	<div class="row">
+        <a href="#/logo">
+            <div class="col-xs-3 center right-border blue ash active">
+            	<h4 ><span class="glyphicon glyphicon-map-marker"></span></h4><h5 > NearBy</h5>
+            </div>
+        </a>
+        <a href="#/map">
+            <div class="col-xs-3 center right-border blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-globe"></span></h4> <h5>Map</h5>
+            </div>
+        </a>
+        <a href="#/routes">
+            <div class="col-xs-3 center right-border blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-random"></span></h4><h5> Routes</h5>
+            </div>
+        </a>
+        <a href="#/settings">
+            <div class="col-xs-3 center blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-asterisk"></span></h4> <h5>Settings</h5>
+            </div>  
+        </a>
+    </div>
+</nav>
+</section>

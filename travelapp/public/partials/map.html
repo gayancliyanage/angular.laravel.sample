@@ -1,0 +1,44 @@
+<div class="container">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="row">
+				<div class="col-xs-12 topheader"><span class="glyphicon glyphicon-asterisk"></span>&nbsp; Map</div>
+			</div>
+		</nav>
+		<div class="row">
+			<div class="col-xs-12">
+			 <p> &nbsp;&nbsp;&nbsp;Select Nearest bus stop from the map and get resutls </p>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+			        <marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" >
+			        </marker>
+			    </google-map>
+			</div>
+		</div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  	<div class="row">
+        <a href="#/logo">
+            <div class="col-xs-3 center right-border blue ash ">
+            	<h4 ><span class="glyphicon glyphicon-map-marker"></span></h4><h5 > NearBy</h5>
+            </div>
+        </a>
+        <a href="#/map">
+            <div class="col-xs-3 center right-border blue ash active"> 
+            	<h4 ><span class="glyphicon glyphicon-globe"></span></h4> <h5>Map</h5>
+            </div>
+        </a>
+        <a href="#/routes">
+            <div class="col-xs-3 center right-border blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-random"></span></h4><h5> Routes</h5>
+            </div>
+        </a>
+        <a href="#/settings">
+            <div class="col-xs-3 center blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-asterisk"></span></h4> <h5>Settings</h5>
+            </div>  
+        </a>
+    </div>
+</nav>

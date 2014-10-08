@@ -1,0 +1,119 @@
+
+	.center {
+	    margin-left: auto;
+	    margin-right: auto;
+	    color: white;
+	    text-align: center;
+	    cursor: pointer;
+	}
+
+	.right-border{
+		border-right: .4px solid #1d77ef;
+	}
+
+	.blue{
+		background-color: #1d62f0;
+	}
+
+	.ash{
+		color: #c7c7cc;
+	}
+	.active{
+		background-color: #007aff;
+		color: #4a4a4a;
+	}
+	.logo{
+		margin-top: 10%;
+		font-size: 120px;
+		text-align:center;
+		color:#c644fc;
+	}
+
+	.getbuses{
+		font-size: 24px;
+		text-align: center;
+		font-weight: 100;
+		color: #ffcd02;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+	}
+	.appname{
+		font-family: 'Rock Salt', cursive;
+		font-size: 32px;
+		text-align: center;
+		color: #ef4db6;
+	}
+
+	body{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+	}
+
+	.topheader{
+		font-family: 'Rock Salt', cursive;
+		text-align: center;
+		color: #ef4db6;
+		padding: 10px;
+		font-size: 20px;
+		background-color: #1d77ef;
+	}
+	.detail-block{
+		padding: 10px;
+	}
+
+	.sidearrow{
+		text-align: center;
+		padding: 30px;
+	}
+	.bottom-border{
+		border-bottom: solid 1px #c7c7cc;
+	}
+	.root{
+		margin-top: 20px;
+	}
+	body { 
+		padding-top: 50px;
+		padding-bottom: 50px; 
+	}
+
+	a{
+    text-decoration: none;
+     color: inherit;
+	}
+
+	.top-buffer
+	{
+		margin-top: 10px;
+	}
+
+	.suggestions
+	{
+		list-style: none;
+		padding-left: 0px;
+	}
+
+	.sug-element
+	{
+		padding: 3px 10px;
+		border-bottom: 1px solid #ccc;
+		border-left:1px solid #ccc; 
+		border-right:1px solid #ccc;
+	}
+	.sug-element:hover {
+	  background-color: #ccc ;
+	}
+
+	.sug_box
+	{
+		position: absolute;
+		z-index: 1000;
+		background-color: #fff;
+		min-width: 200px;
+		/*display: none;*/
+		
+	}
+
+	.angular-google-map-container 
+	{ 
+		height: 600px; 
+	}

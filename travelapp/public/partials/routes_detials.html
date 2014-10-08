@@ -1,0 +1,48 @@
+<div class="container">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="row">
+				<div class="col-xs-12 topheader"><span class="glyphicon glyphicon-random"></span> &nbsp;Buses by Roots</div>
+			</div>
+		</nav>
+		<div class="row bottom-border"  ng-repeat="item in buses">
+			<div class="col-xs-3" style="text-align:center;">
+				<h1 class="root">{{item.root_id}}</h1>
+			</div>
+			<div class="col-xs-7 detail-block">
+				<h6>{{item.rootname}} &nbsp; - &nbsp; {{item.from_city}} to {{item.to_city}}</h6>
+				<p ><span class="glyphicon glyphicon-forward"></span> Heading to {{item.Heading}} </p>
+				<div class="row">
+					<div class="col-xs-5">
+						<p >Now <span class="label label-success">{{item.last_stop}}</span></p>
+					</div>
+					<div class="col-xs-7">
+					<!--	<p style="font-size:10px;">Get Board &nbsp;<span class="label label-info">{{item.arrivalstop}}</span></p>-->
+					</div>					
+				</div>
+			</div>
+		</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  	<div class="row">
+        <a href="#/logo">
+            <div class="col-xs-3 center right-border blue ash ">
+            	<h4 ><span class="glyphicon glyphicon-map-marker"></span></h4><h5 > NearBy</h5>
+            </div>
+        </a>
+        <a href="#/map">
+            <div class="col-xs-3 center right-border blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-globe"></span></h4> <h5>Map</h5>
+            </div>
+        </a>
+        <a href="#/routes">
+            <div class="col-xs-3 center right-border blue ash active"> 
+            	<h4 ><span class="glyphicon glyphicon-random"></span></h4><h5> Routes</h5>
+            </div>
+        </a>
+        <a href="#/settings">
+            <div class="col-xs-3 center blue ash"> 
+            	<h4 ><span class="glyphicon glyphicon-asterisk"></span></h4> <h5>Settings</h5>
+            </div>  
+        </a>
+    </div>
+</nav>
